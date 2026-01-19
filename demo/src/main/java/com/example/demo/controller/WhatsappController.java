@@ -18,7 +18,8 @@ public class WhatsappController {
     @PostMapping("/send")
     public String sendWhatsAppMessages() {
         System.out.println("WhatsApp API triggered");
-        service.sendToMultipleNumbers();
+        service.sendToAllEmployees();
         return "WhatsApp messages sent successfully";
     }
+
 }
